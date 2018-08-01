@@ -4,4 +4,5 @@ export class Contacto{
     telefono:string;
     fecha:string;
     ciudad:string;
+    activo:boolean;
 }
