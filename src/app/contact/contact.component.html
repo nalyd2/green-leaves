@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="col-md-12 center">
+        <div class="cabecera col-md-12" style="background-color: #2cf32c99; border-radius: 25px; margin: 15px 0;">
+            <div class="textocabecera col-md-8">
+                <h1>Green Leaves</h1>
+            </div>
+            <div class="imagencabecera col-md-4">
+                <img height="75px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDkzLjk5OSA5My45OTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkzLjk5OSA5My45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMy42MDIsMTcuNTE5QzQuNDkxLDI4LjYwOCw1LjU4OCw0Ni42Nyw2LjI0Niw1My4zNTNjMjQuNjg0LTI5LjI0LDYxLjYwNi0yNy44MjIsNjEuNjA2LTI3LjgyMiAgICBTMTUuNTE0LDQzLjQ4NCwwLjE0Miw3OS40ODVjLTEuMjE0LDIuODQyLDUuNjk2LDYuNTM4LDcuMjczLDMuMTc4YzQuNzA3LTEwLjAxMiwxMS4yNjYtMTcuNTIxLDExLjI2Ni0xNy41MjEgICAgYzkuNjc3LDMuNjAxLDI2LjQxNyw3LjgyMSwzOC4yODItMC41MjhjMTUuNzYtMTEuMDkxLDE0LjE0OS0zNS42NzcsMzYuNjQ3LTQ3LjY0OEM5OC44NjUsMTQuMTcxLDQ5LjUxMSwyLjQ4NCwyMy42MDIsMTcuNTE5eiIgZmlsbD0iIzkxREM1QSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                />
+            </div>
+        </div>
+        <form #contactForm="ngForm">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nombre</label>
+                <input type="text" class="form-control" [(ngModel)]="contacto.nombre" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">E-mail</label>
+                <input type="text" class="form-control" [(ngModel)]="contacto.email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" [(ngModel)]="contacto.telefono" name="telefono" id="telefono" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="fecha" [(ngModel)]="contacto.fecha" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
+                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDM2LjQ0OSAzNi40NDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM2LjQ0OSAzNi40NDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxMi44NTgiIHk9IjE0LjYyNiIgd2lkdGg9IjQuNTk2IiBoZWlnaHQ9IjQuMDg5IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHJlY3QgeD0iMTguOTk2IiB5PSIxNC42MjYiIHdpZHRoPSI0LjU5NSIgaGVpZ2h0PSI0LjA4OSIgZmlsbD0iIzAwMDAwMCIvPgoJCTxyZWN0IHg9IjI1LjEyOCIgeT0iMTQuNjI2IiB3aWR0aD0iNC41OTYiIGhlaWdodD0iNC4wODkiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cmVjdCB4PSI2LjcyNCIgeT0iMjAuMDg0IiB3aWR0aD0iNC41OTUiIGhlaWdodD0iNC4wODYiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cmVjdCB4PSIxMi44NTgiIHk9IjIwLjA4NCIgd2lkdGg9IjQuNTk2IiBoZWlnaHQ9IjQuMDg2IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHJlY3QgeD0iMTguOTk2IiB5PSIyMC4wODQiIHdpZHRoPSI0LjU5NSIgaGVpZ2h0PSI0LjA4NiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxyZWN0IHg9IjI1LjEyOCIgeT0iMjAuMDg0IiB3aWR0aD0iNC41OTYiIGhlaWdodD0iNC4wODYiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cmVjdCB4PSI2LjcyNCIgeT0iMjUuNTQiIHdpZHRoPSI0LjU5NSIgaGVpZ2h0PSI0LjA4NiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxyZWN0IHg9IjEyLjg1OCIgeT0iMjUuNTQiIHdpZHRoPSI0LjU5NiIgaGVpZ2h0PSI0LjA4NiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxyZWN0IHg9IjE4Ljk5NiIgeT0iMjUuNTQiIHdpZHRoPSI0LjU5NSIgaGVpZ2h0PSI0LjA4NiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxyZWN0IHg9IjI1LjEyOCIgeT0iMjUuNTQiIHdpZHRoPSI0LjU5NiIgaGVpZ2h0PSI0LjA4NiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxwYXRoIGQ9Ik0zMS45NzQsMzIuMTk4YzAsMC45NjUtMC43ODUsMS43NS0xLjc1LDEuNzVoLTI0Yy0wLjk2NSwwLTEuNzUtMC43ODUtMS43NS0xLjc1VjEyLjA5OWgtMi41djIwLjA5OSAgICBjMCwyLjM0MywxLjkwNyw0LjI1LDQuMjUsNC4yNWgyNGMyLjM0NCwwLDQuMjUtMS45MDcsNC4yNS00LjI1VjEyLjA5OWgtMi41VjMyLjE5OHoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMzAuMjI0LDMuOTQ4aC0xLjA5OFYyLjc1YzAtMS41MTctMS4xOTctMi43NS0yLjY3LTIuNzVjLTEuNDc0LDAtMi42NywxLjIzMy0yLjY3LDIuNzV2MS4xOTdoLTIuNzRWMi43NSAgICBjMC0xLjUxNy0xLjE5Ny0yLjc1LTIuNjctMi43NWMtMS40NzMsMC0yLjY3LDEuMjMzLTIuNjcsMi43NXYxLjE5N2gtMi43NFYyLjc1YzAtMS41MTctMS4xOTctMi43NS0yLjY3LTIuNzUgICAgYy0xLjQ3MywwLTIuNjcsMS4yMzMtMi42NywyLjc1djEuMTk3SDYuMjI0Yy0yLjM0MywwLTQuMjUsMS45MDctNC4yNSw0LjI1djJoMi41aDI3LjVoMi41di0yICAgIEMzNC40NzQsNS44NTUsMzIuNTY4LDMuOTQ4LDMwLjIyNCwzLjk0OHogTTExLjQ2Niw3LjY0NmMwLDAuNjg5LTAuNTI1LDEuMjUtMS4xNywxLjI1cy0xLjE3LTAuNTYxLTEuMTctMS4yNVYyLjc1ICAgIGMwLTAuNjg5LDAuNTI1LTEuMjUsMS4xNy0xLjI1czEuMTcsMC41NjEsMS4xNywxLjI1VjcuNjQ2eiBNMTkuNTQ2LDcuNjQ2YzAsMC42ODktMC41MjUsMS4yNS0xLjE3LDEuMjVzLTEuMTctMC41NjEtMS4xNy0xLjI1ICAgIFYyLjc1YzAtMC42ODksMC41MjUtMS4yNSwxLjE3LTEuMjVzMS4xNywwLjU2MSwxLjE3LDEuMjVWNy42NDZ6IE0yNy42MjYsNy42NDZjMCwwLjY4OS0wLjUyNSwxLjI1LTEuMTcsMS4yNSAgICBjLTAuNjQ2LDAtMS4xNy0wLjU2MS0xLjE3LTEuMjVWMi43NWMwLTAuNjg5LDAuNTI0LTEuMjUsMS4xNy0xLjI1YzAuNjQ1LDAsMS4xNywwLjU2MSwxLjE3LDEuMjVWNy42NDZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                      </button>
+                    </div>
+                </div>
+                <!-- <input type="text" class="form-control" [(ngModel)]="contacto.fecha" name="fecha" id="fecha" placeholder="Fecha">-->
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad y Estado:</label>
+                <input type="text" class="form-control" [(ngModel)]="contacto.ciudad" name="ciudad" id="ciudad">
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)="enviar()">Submit</button>
+        </form>
+    </div>
+</div>
+<!--<popup>holaaaaa</popup>-->
