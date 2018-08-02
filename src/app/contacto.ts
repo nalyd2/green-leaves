@@ -1,3 +1,4 @@
+
 export class Contacto{
     nombre:string;
     email:string;
@@ -5,4 +6,5 @@ export class Contacto{
     fecha:string;
     ciudad:string;
     activo:boolean;
+    detalles:string[];
 }
